@@ -47,13 +47,3 @@ header nav ul li a{
 header a{
     color: var(--primary-color);
 }
-.hero{
-    background-image: url('../personal-portfolio/assets/images/hero.bg.jpg');
-    background-size: cover;
-    background-position: 80%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-}
