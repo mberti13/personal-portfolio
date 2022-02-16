@@ -12,6 +12,10 @@
 body{
     color: var(--primary-color);
     background-color: var(--main-bg-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#main{
+    min-height: calc(100vh - 182px - 101px);
 }
 /* Header/Nav */
 header{
@@ -23,7 +27,7 @@ header{
 }
 header h1 a{
     font-weight: bold;
-    padding-left: 50px;
+    margin: 15px;
     color: var(--primary-color);
     font-weight: bolder;
 }
@@ -43,15 +47,26 @@ header nav ul{
 header nav ul li a{
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 30px;
+    font-size: 25px;
 }
 header a{
     color: var(--primary-color);
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+header a:visited{
+    text-decoration: none;
 }
 /* Section Headings */
 .section-heading{
     color: var(--primary-color);
     text-decoration: underline ;
+    margin: 15px;
+    text-align: center;
+    font-size: 32px;
 }
 
 /* Hero */
@@ -63,15 +78,22 @@ header a{
 }
 .statement{
     color: var(--primary-color) ;
-    text-align: right;
+    text-align: center;
     margin: auto;
     padding: 35px 10px 0 0;
+    text-decoration: wavy ;
 
 }
 
-/* About Me */
+/* About Me 
+#about-me{
 
+}*/
 
+#about-me p{
+    margin: 15px;
+    text-align: center;
+}
 /* Projects/Work (Grid/Flexbox) */
 
 
@@ -80,13 +102,13 @@ header a{
 footer{
     background-color: var(--head-color);
     width:100%;
-    display: flex;
     bottom: 0;
-    justify-content: space-between;
 }
 footer h2{
     margin: 0;
     color: var(--main-bg-color);
+    text-align: center;
+    padding-top: 25px;
 }
 footer ul{
     display: flex;
@@ -96,6 +118,8 @@ footer ul{
 #contact ul li{
     justify-content: space-between;
     margin: 20px;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 #contact a{
     text-decoration: none;
@@ -104,6 +128,7 @@ footer ul{
 #contact a:hover{
     text-decoration: underline;
     color: var(--primary-color);
+    font-weight: bolder;
 }
 #contact a:visited{
     text-decoration: none;
@@ -111,3 +136,7 @@ footer ul{
 }
 
 /* Add Icons to Footer Links */
+
+.fa-li{
+    margin: 0px 3px
+}
