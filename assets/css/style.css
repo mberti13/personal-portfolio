@@ -23,11 +23,9 @@ header{
 }
 header h1 a{
     font-weight: bold;
-    background-color: var(--primary-color);
     padding-left: 50px;
-    color: rgb(8, 8, 8);
-    margin-left: -20px;
-
+    color: var(--primary-color);
+    font-weight: bolder;
 }
 header nav{
     margin: 7px 0;
@@ -53,7 +51,7 @@ header a{
 /* Section Headings */
 .section-heading{
     color: var(--primary-color);
-    text-decoration: underline;
+    text-decoration: underline ;
 }
 
 /* Hero */
@@ -97,7 +95,7 @@ footer ul{
 }
 #contact ul li{
     justify-content: space-between;
-    margin: 10px;
+    margin: 20px;
 }
 #contact a{
     text-decoration: none;
@@ -111,3 +109,5 @@ footer ul{
     text-decoration: none;
     color: var(--primary-color);
 }
+
+/* Add Icons to Footer Links */
