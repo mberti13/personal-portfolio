@@ -1,7 +1,8 @@
 :root{
-    --primary-color: #40A7B2;
-    --main-bg-color: #d8e2e3;
-    --accent-blue: #01144A;
+    --primary-color: #DEE2E6;
+    --main-bg-color: #212529;
+    --accent-blue: #6C757C;
+    --head-color: rgb(8, 8, 8);
 }
 *{
     margin: 0;
@@ -10,6 +11,7 @@
 }
 body{
     color: var(--primary-color);
+    background-color: var(--main-bg-color);
 }
 /* Header/Nav */
 header{
@@ -50,7 +52,8 @@ header a{
 }
 /* Section Headings */
 .section-heading{
-    color: #01144A;
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 /* Hero */
@@ -61,22 +64,50 @@ header a{
  
 }
 .statement{
-    color: var(--main-bg-color) ;
+    color: var(--primary-color) ;
     text-align: right;
     margin: auto;
     padding: 35px 10px 0 0;
 
 }
 
+/* About Me */
+
+
+/* Projects/Work (Grid/Flexbox) */
+
+
+
 /* Footer */
 footer{
-    background-color: var(--main-bg-color);
-    position:absolute;
-    bottom:0;
+    background-color: var(--head-color);
     width:100%;
-    height:100px;   /* Height of the footer */
+    display: flex;
+    bottom: 0;
+    justify-content: space-between;
 }
-.footer a{
-    color: var(--accent-blue);
+footer h2{
+    margin: 0;
+    color: var(--main-bg-color);
 }
-
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#contact ul li{
+    justify-content: space-between;
+    margin: 10px;
+}
+#contact a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+#contact a:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+#contact a:visited{
+    text-decoration: none;
+    color: var(--primary-color);
+}
