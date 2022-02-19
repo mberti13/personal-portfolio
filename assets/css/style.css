@@ -101,6 +101,19 @@ hr.dotted{
     border-top: 1px solid var(--primary-color);
 }
 /* Projects/Work (Grid/Flexbox) */
+#projects{
+    background-color: #D7D427;
+    display: grid;
+    grid-template-columns: 1.25fr 2fr 1.25fr;
+    grid-template-rows: 10% 1fr 1fr 1fr ;
+    padding: 5px;
+    gap: 5px;
+    box-sizing: border-box;
+}
+#work-title{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
 
 
 
