@@ -110,10 +110,46 @@ hr.dotted{
     gap: 5px;
     box-sizing: border-box;
 }
+.work{
+    display: grid;
+    
+    
+}
 #work-title{
     grid-column-start: 2;
     grid-column-end: 3;
 }
+.img1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.img2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.img3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.img4{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.big-image{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
 
 
 
