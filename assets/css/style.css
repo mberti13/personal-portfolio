@@ -94,6 +94,11 @@ header a:visited{
 #about-me p{
     margin: 15px;
     text-align: center;
+    padding: 15px;
+}
+/*Styling for dotted divider between 'About Me' and 'My Work'*/ 
+hr.dotted{
+    border-top: 1px solid var(--primary-color);
 }
 /* Projects/Work (Grid/Flexbox) */
 
