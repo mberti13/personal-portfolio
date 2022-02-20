@@ -107,8 +107,11 @@ hr.dotted{
     grid-template-columns: 1.25fr 2fr 1.25fr;
     grid-template-rows: 10% 1fr 1fr 1fr ;
     padding: 5px;
+    margin: 0;
     gap: 5px;
     box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
 }
 .work{
     display: grid;
@@ -139,12 +142,14 @@ hr.dotted{
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
+    max-width: 100%;
 }
 .img4{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
+    max-width: 100%;
 }
 .big-image{
     grid-column-start: 2;
@@ -197,4 +202,8 @@ footer ul{
 
 .fa-li{
     margin: 0px 3px
+}
+/*Media Query for Desktop/Laptops*/
+@media screen and (max-width: 980px){
+
 }
