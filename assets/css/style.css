@@ -109,8 +109,8 @@ hr.dotted{
     background-color: var(--main-bg-color);
     /* Test color: #D7D427 */
     display: grid;
-    grid-template-columns: 1.25fr 2fr 1.25fr;
-    grid-template-rows: 10% 1fr 1fr 1fr ;
+    grid-template-columns: repeat(autofit,1.25fr 2fr 1.25fr);
+    grid-template-rows: repeat(autofit, 10% 1fr 1fr 1fr);
 
     margin: 0;
     box-sizing: border-box;
@@ -129,6 +129,8 @@ hr.dotted{
     grid-row-end: 3;
     max-width: 100%;
     max-height: 100%;
+    object-fit: contain;
+    width: 100%;
 }
 .img2{
     grid-column-start: 3;
@@ -243,6 +245,8 @@ footer ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+
 }
 #contact ul li{
     justify-content: space-between;
@@ -270,10 +274,32 @@ footer ul{
     margin: 0px 3px
 }
 /*Media Query for XL Screens*/
-@media screen and (max-width: 980px){
 
-}
 /*Media Query for Tablets*/
 
-
 /*Media Query for Phones*/
+@media screen and (max-width: 575px){
+footer{
+    padding: 0;
+    margin: 0;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#work-title{
+    text-align: center;
+}
+.img1, .img2, .img3, .img4, .big-image{
+    max-width: 315px;
+    max-height: 256px;
+    overflow: none;
+
+}
+}
