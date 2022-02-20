@@ -3,6 +3,7 @@
     --main-bg-color: #212529;
     --accent-blue: #6C757C;
     --head-color: rgb(8, 8, 8);
+    --blue-border: #0f69a6;
 }
 *{
     margin: 0;
@@ -92,9 +93,10 @@ header a:visited{
 }*/
 
 #about-me p{
-    margin: 15px;
+    margin: 20px;
     text-align: center;
     padding: 15px;
+    border: 3px dotted #0f69a6;
 }
 /*Styling for dotted divider between 'About Me' and 'My Work'*/ 
 hr.dotted{
@@ -165,7 +167,7 @@ hr.dotted{
 }
 /* Image Borders */
 .img1 img, .img2 img, .img3 img,.img4 img, .big-image img{
-     border: 3px solid var(--primary-color);
+     border: 3px solid var(--blue-border);
      border-radius: 25px;
 }
 /* Image/Project :hover effects for Labels */
@@ -190,6 +192,7 @@ hr.dotted{
     opacity: 0;
     border-radius: 25px ;
     transition: opacity 0.25s;
+   /* pointer-events: none; */
 }
 .big-label > *{
     transform: translateY(20px);
@@ -210,6 +213,13 @@ hr.dotted{
     font-size: 1.25em;
     margin-top: 0.25em;
 }
+
+/* Span to make css hover effect a clickable link*/
+#projects .big-image a{
+    z-index: 444;
+}
+
+
 /* Label Styling for img 1*/
 
 /* Label Styling for img 2*/
