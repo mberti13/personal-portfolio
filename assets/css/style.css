@@ -107,9 +107,8 @@ hr.dotted{
     display: grid;
     grid-template-columns: 1.25fr 2fr 1.25fr;
     grid-template-rows: 10% 1fr 1fr 1fr ;
-    padding: 5px;
+
     margin: 0;
-    gap: 5px;
     box-sizing: border-box;
     justify-items: center;
     align-items: center;
@@ -151,6 +150,10 @@ hr.dotted{
     grid-row-end: 5;
     max-width: 100%;
 }
+
+
+
+
 .big-image{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -165,6 +168,59 @@ hr.dotted{
      border: 3px solid var(--primary-color);
      border-radius: 25px;
 }
+/* Image/Project :hover effects for Labels */
+
+.big-image {
+    position: relative;
+   
+}
+.big-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--primary-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 25px ;
+    transition: opacity 0.25s;
+}
+.big-label > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.big-label:hover{
+    opacity: 1;
+}
+.big-label:hover > *{
+    transform: translateY(0);
+}
+.big-label-title{
+    font-size: 2em;
+    font-weight: bold;
+}
+.big-label-description{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+/* Label Styling for img 1*/
+
+/* Label Styling for img 2*/
+
+/* Label Styling for img 3*/
+
+/* Label Styling for img 4*/
+
+
+
+
 
 
 /* Footer */
