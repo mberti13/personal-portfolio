@@ -123,49 +123,82 @@ hr.dotted{
     grid-column-end: 3;
 }
 .img1{
+    background-image: url(../images/placeholder\ default.png);
+    background-size: 350px 250px;
+    background-position: center;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain;
-    width: 100%;
+    width: 350px;
+    height: 250px;
+    border-radius: 25px;
 }
 .img2{
+    background-image: url(../images/placeholder\ default.png);
+    background-size: 350px 250px;
+    background-position: center;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+    max-width: 100%;
+    max-height: 100%;
+    width: 350px;
+    height: 250px;
+    border-radius: 25px;
 }
 .img3{
+    background-image: url(../images/placeholder\ default.png);
+    background-size: 350px 250px;
+    background-position: center;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
     max-width: 100%;
+    max-height: 100%;
+    width: 350px;
+    height: 250px;
+    border-radius: 25px;
 }
 .img4{
+    background-image: url(../images/placeholder\ default.png);
+    background-size: 350px 250px;
+    background-position: center;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
     max-width: 100%;
+    max-height: 100%;
+    width: 350px;
+    height: 250px;
+    border-radius: 25px;
 }
 
 
 
 .big-image{
+    background-image: url(../images/run-buddy-photo.jpg);
+    background-size: 500px 350px;
+    background-position: center;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
     max-width: 100%;
+    max-height: auto;
+    width: 500px;
+    height: 350px;
+    border-radius: 25px;
     
 }
 
 /* Image Borders */
-.img1 img, .img2 img, .img3 img,.img4 img, .big-image img{
+.img1, .img2, .img3,.img4, .big-image{
      border: 3px solid var(--blue-border);
      border-radius: 25px;
 }
@@ -300,6 +333,8 @@ footer ul{
     max-width: 315px;
     max-height: 256px;
     overflow: none;
-
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
 }
 }
