@@ -102,6 +102,8 @@ header a:visited{
 hr.dotted{
     border-top: 1px solid var(--primary-color);
 }
+
+
 /* Projects/Work (Grid/Flexbox) */
 #projects{
     background-color: var(--main-bg-color);
@@ -115,11 +117,7 @@ hr.dotted{
     justify-items: center;
     align-items: center;
 }
-.work{
-    display: grid;
-    
-    
-}
+
 #work-title{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -155,23 +153,21 @@ hr.dotted{
 
 
 
-
 .big-image{
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
     max-width: 100%;
-    object-fit: cover;
     
 }
+
 /* Image Borders */
 .img1 img, .img2 img, .img3 img,.img4 img, .big-image img{
      border: 3px solid var(--blue-border);
      border-radius: 25px;
 }
 /* Image/Project :hover effects for Labels */
-
 .big-image {
     position: relative;
    
@@ -214,10 +210,8 @@ hr.dotted{
     margin-top: 0.25em;
 }
 
-/* Span to make css hover effect a clickable link*/
-#projects .big-image a{
-    z-index: 444;
-}
+
+
 
 
 /* Label Styling for img 1*/
