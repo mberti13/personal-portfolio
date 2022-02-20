@@ -1,7 +1,8 @@
 :root{
-    --primary-color: #40A7B2;
-    --main-bg-color: #d8e2e3;
-    --accent-blue: #01144A;
+    --primary-color: #DEE2E6;
+    --main-bg-color: #212529;
+    --accent-blue: #6C757C;
+    --head-color: rgb(8, 8, 8);
 }
 *{
     margin: 0;
@@ -10,6 +11,11 @@
 }
 body{
     color: var(--primary-color);
+    background-color: var(--main-bg-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#main{
+    min-height: calc(100vh - 182px - 101px);
 }
 /* Header/Nav */
 header{
@@ -21,11 +27,9 @@ header{
 }
 header h1 a{
     font-weight: bold;
-    background-color: var(--primary-color);
-    padding-left: 50px;
-    color: rgb(8, 8, 8);
-    margin-left: -20px;
-
+    margin: 15px;
+    color: var(--primary-color);
+    font-weight: bolder;
 }
 header nav{
     margin: 7px 0;
@@ -43,15 +47,26 @@ header nav ul{
 header nav ul li a{
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 30px;
+    font-size: 25px;
 }
 header a{
     color: var(--primary-color);
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+header a:visited{
+    text-decoration: none;
 }
 /* Section Headings */
 .section-heading{
-    color: #01144A;
-    text-decoration: underline;
+    color: var(--primary-color);
+    text-decoration: underline ;
+    margin: 15px;
+    text-align: center;
+    font-size: 32px;
 }
 
 /* Hero */
@@ -62,27 +77,124 @@ header a{
  
 }
 .statement{
-    color: var(--main-bg-color) ;
-    text-align: right;
+    color: var(--primary-color);
+    text-align: center;
     margin: auto;
     padding: 35px 10px 0 0;
+    text-decoration: wavy;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* About Me 
+#about-me{
+
+}*/
+
+#about-me p{
+    margin: 15px;
+    text-align: center;
+    padding: 15px;
+}
+/*Styling for dotted divider between 'About Me' and 'My Work'*/ 
+hr.dotted{
+    border-top: 1px solid var(--primary-color);
+}
+/* Projects/Work (Grid/Flexbox) */
+#projects{
+    background-color: #D7D427;
+    display: grid;
+    grid-template-columns: 1.25fr 2fr 1.25fr;
+    grid-template-rows: 10% 1fr 1fr 1fr ;
+    padding: 5px;
+    gap: 5px;
+    box-sizing: border-box;
+}
+.work{
+    display: grid;
+    
+    
+}
+#work-title{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.img1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    max-width: 100%;
+    max-height: 100%;
 
 }
+.img2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.img3{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.img4{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.big-image{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+
 
 /* Footer */
 footer{
-    background-color: var(--main-bg-color);
-    position:absolute;
-    bottom:0;
+    background-color: var(--head-color);
     width:100%;
-    height:100px;   /* Height of the footer */
+    bottom: 0;
 }
-footer a{
-    color: var(--accent-blue);
-    text-decoration: none;
+footer h2{
+    margin: 0;
+    color: var(--main-bg-color);
+    text-align: center;
+    padding-top: 25px;
 }
-footer a:visited{
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#contact ul li{
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+#contact a{
     text-decoration: none;
-    color: var(--accent-blue);
+    color: var(--primary-color);
+}
+#contact a:hover{
+    text-decoration: underline;
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+#contact a:visited{
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
+/* Add Icons to Footer Links */
+
+.fa-li{
+    margin: 0px 3px
+}
