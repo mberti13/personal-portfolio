@@ -213,7 +213,7 @@ hr.dotted{
     width: 500px;
     height: 350px;
     border-radius: 25px;
-    
+    position: relative;
 }
 
 /* Image Borders */
@@ -222,10 +222,6 @@ hr.dotted{
      border-radius: 25px;
 }
 /* Image/Project :hover effects for Labels */
-.big-image {
-    position: relative;
-   
-}
 .big-label{
     position: absolute;
     top: 0;
@@ -249,7 +245,7 @@ hr.dotted{
     transform: translateY(20px);
     transition: transform 0.25s;
 }
-
+/*Causes :hover to not work on touchscreen*/
 @media (hover:hover) {
     .big-label:hover{
         opacity: 1;
@@ -421,6 +417,26 @@ header{
 .big-image{
     background-size: 309px 250px;
     order: 0;
+}
+.big-label{
+    background-color: var(--blue-border);
+    opacity: 1;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    height: 100px;
+    border-radius: 0;
+    position: absolute;
+    display: flex;
+    align-items: left;
+}
+.big-label-title h3{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+.big-label-description{
+    font-size: 18px;
 }
 .img1{
     order: 1;
