@@ -7,5 +7,7 @@ This is the base of my personal portfolio for a project from the Coding Bootcamp
 ### Screenshot:
 
 
-**Link to Deployed Application**
+
+
+**Link to Deployed Application:**
 https://mberti13.github.io/personal-portfolio/
