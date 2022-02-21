@@ -91,7 +91,24 @@ header a:visited{
 #about-me{
 
 }*/
-
+#about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.headshot{
+    background-image: url(../images/linkedin-photo.jpg);
+    clip: rect(0, 716, 580, 81);
+    background-size: auto;
+    background-position: top;
+    max-width: 100%;
+    max-height: auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 4px solid var(--blue-border);
+    border-radius: 50%;
+}
 #about-me p{
     margin: 20px;
     text-align: center;
@@ -102,21 +119,21 @@ header a:visited{
 hr.dotted{
     border-top: 1px solid var(--primary-color);
 }
-
-
 /* Projects/Work (Grid/Flexbox) */
 #projects{
     background-color: var(--main-bg-color);
     /* Test color: #D7D427 */
     display: grid;
-    grid-template-columns: 1.5fr 3fr 1.5fr;
+    grid-template-columns: minmax(100px, 1.5fr) minmax(200px, 3fr) minmax(100px, 1.5fr);
     grid-template-rows: 10% 1fr 1fr 1fr;
     flex-wrap: wrap;
-
+    grid-auto-flow: column;
     margin: 0;
     box-sizing: border-box;
     justify-items: center;
     align-items: center;
+    overflow: auto;
+    min-width: 0;
 
 }
 
@@ -233,12 +250,15 @@ hr.dotted{
     transition: transform 0.25s;
 }
 
-.big-label:hover{
-    opacity: 1;
+@media (hover:hover) {
+    .big-label:hover{
+        opacity: 1;
+    }
+    .big-label:hover > *{
+        transform: translateY(0);
+    }
 }
-.big-label:hover > *{
-    transform: translateY(0);
-}
+
 .big-label-title{
     font-size: 2em;
     font-weight: bold;
@@ -312,7 +332,6 @@ footer ul{
 /*Media Query for XL Screens*/
 
 /*Media Query for Hover on computers*/
-
 
 /*Media Query for Tablets*/
 @media only screen and (max-width: 830px) and (min-width: 576px){
