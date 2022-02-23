@@ -381,7 +381,7 @@ footer ul{
 .img4{
     order: 4;
 }
-.big-label{
+.big-label, .img1-label{
     background-color: var(--blue-border);
     opacity: 1;
     bottom: 30px;
@@ -394,12 +394,12 @@ footer ul{
     align-items: left;
     justify-content: flex-start;
 }
-.big-label-title h3{
+.big-label-title h3, .img1-label-title h3{
     color: white;
     font-size: 22px;
     font-weight: bold;
 }
-.big-label-description{
+.big-label-description, .img1-label-description{
     font-size: 18px;
 }
 }
