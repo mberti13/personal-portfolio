@@ -142,8 +142,8 @@ hr.dotted{
     grid-column-end: 3;
 }
 .img1{
-    background-image: url(../images/placeholder\ default.png);
-    background-size: 350px 250px;
+    background-image: url(../images/robot-gladiators-photo.jpg);
+    background-size: cover;
     background-position: center;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -154,6 +154,7 @@ hr.dotted{
     width: 350px;
     height: 250px;
     border-radius: 25px;
+    position: relative;
 }
 .img2{
     background-image: url(../images/placeholder\ default.png);
@@ -222,7 +223,7 @@ hr.dotted{
      border-radius: 25px;
 }
 /* Image/Project :hover effects for Labels */
-.big-label{
+.big-label, .img1-label{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -241,25 +242,29 @@ hr.dotted{
     
    /* pointer-events: none; */
 }
-.big-label > *{
+/*To cneter all small project labels/titles*/
+.img1-label-title{
+    text-align: center;
+}
+.big-label,.img1-label > *{
     transform: translateY(20px);
     transition: transform 0.25s;
 }
 /*Causes :hover to not work on touchscreen*/
 @media (hover:hover) {
-    .big-label:hover{
+    .big-label:hover, .img1-label:hover{
         opacity: 1;
     }
-    .big-label:hover > *{
+    .big-label:hover, .img1-label:hover > *{
         transform: translateY(0);
     }
 }
 
-.big-label-title{
+.big-label-title,.img1-label-title{
     font-size: 2em;
     font-weight: bold;
 }
-.big-label-description{
+.big-label-description, .img1-label-description{
     font-size: 1.25em;
     margin-top: 0.25em;
 }
