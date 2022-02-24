@@ -157,8 +157,8 @@ hr.dotted{
     position: relative;
 }
 .img2{
-    background-image: url(../images/placeholder\ default.png);
-    background-size: 350px 250px;
+    background-image: url(../images/taskinator-photo.jpg);
+    background-size: cover;
     background-position: center;
     grid-column-start: 3;
     grid-column-end: 4;
@@ -169,6 +169,7 @@ hr.dotted{
     width: 350px;
     height: 250px;
     border-radius: 25px;
+    position: relative;
 }
 .img3{
     background-image: url(../images/placeholder\ default.png);
@@ -203,7 +204,7 @@ hr.dotted{
 
 .big-image{
     background-image: url(../images/run-buddy-photo.jpg);
-    background-size: 500px 350px;
+    background-size: cover;
     background-position: center;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -223,7 +224,7 @@ hr.dotted{
      border-radius: 25px;
 }
 /* Image/Project :hover effects for Labels */
-.big-label, .img1-label{
+.big-label, .img1-label, .img2-label{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -243,28 +244,28 @@ hr.dotted{
    /* pointer-events: none; */
 }
 /*To cneter all small project labels/titles*/
-.img1-label-title{
+.img1-label-title, .img2-label-title{
     text-align: center;
 }
-.big-label,.img1-label > *{
+.big-label,.img1-label, .img2-label > *{
     transform: translateY(20px);
     transition: transform 0.25s;
 }
 /*Causes :hover to not work on touchscreen*/
 @media (hover:hover) {
-    .big-label:hover, .img1-label:hover{
+    .big-label:hover, .img1-label:hover, .img2-label:hover{
         opacity: 1;
     }
-    .big-label:hover, .img1-label:hover > *{
+    .big-label:hover, .img1-label:hover, .img2-label:hover > *{
         transform: translateY(0);
     }
 }
 
-.big-label-title,.img1-label-title{
+.big-label-title,.img1-label-title,.img2-label-title{
     font-size: 2em;
     font-weight: bold;
 }
-.big-label-description, .img1-label-description{
+.big-label-description, .img1-label-description,.img2-label-description{
     font-size: 1.25em;
     margin-top: 0.25em;
 }
@@ -381,7 +382,7 @@ footer ul{
 .img4{
     order: 4;
 }
-.big-label, .img1-label{
+.big-label, .img1-label, .img2-label{
     background-color: var(--blue-border);
     opacity: 1;
     bottom: 30px;
@@ -394,13 +395,15 @@ footer ul{
     align-items: left;
     justify-content: flex-start;
 }
-.big-label-title h3, .img1-label-title h3{
+.big-label-title h3, .img1-label-title h3, .img2-label-title h3{
     color: white;
     font-size: 22px;
     font-weight: bold;
+    text-align: center;
 }
-.big-label-description, .img1-label-description{
+.big-label-description, .img1-label-description, .img2-label-description{
     font-size: 18px;
+    text-align: center;
 }
 }
 /*Media Query for Phones*/
