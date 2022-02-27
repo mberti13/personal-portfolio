@@ -172,7 +172,8 @@ hr.dotted{
     position: relative;
 }
 .img3{
-    background-image: url(../images/placeholder\ default.png);
+    background-image: url(../images/password-generator-photo.jpg);
+    background-size: cover;
     background-size: 350px 250px;
     background-position: center;
     grid-column-start: 1;
@@ -184,6 +185,7 @@ hr.dotted{
     width: 350px;
     height: 250px;
     border-radius: 25px;
+    position: relative;
 }
 .img4{
     background-image: url(../images/placeholder\ default.png);
@@ -224,7 +226,7 @@ hr.dotted{
      border-radius: 25px;
 }
 /* Image/Project :hover effects for Labels */
-.big-label, .img1-label, .img2-label{
+.big-label, .img1-label, .img2-label, .img3-label{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -244,28 +246,28 @@ hr.dotted{
    /* pointer-events: none; */
 }
 /*To cneter all small project labels/titles*/
-.img1-label-title, .img2-label-title{
+.img1-label-title, .img2-label-title, .img3-label-title{
     text-align: center;
 }
-.big-label,.img1-label, .img2-label > *{
+.big-label,.img1-label, .img2-label, .img3-label > *{
     transform: translateY(20px);
     transition: transform 0.25s;
 }
 /*Causes :hover to not work on touchscreen*/
 @media (hover:hover) {
-    .big-label:hover, .img1-label:hover, .img2-label:hover{
+    .big-label:hover, .img1-label:hover, .img2-label:hover, .img3-label:hover{
         opacity: 1;
     }
-    .big-label:hover, .img1-label:hover, .img2-label:hover > *{
+    .big-label:hover, .img1-label:hover, .img2-label:hover, .img3-label:hover > *{
         transform: translateY(0);
     }
 }
 
-.big-label-title,.img1-label-title,.img2-label-title{
+.big-label-title,.img1-label-title,.img2-label-title, .img3-label-title{
     font-size: 2em;
     font-weight: bold;
 }
-.big-label-description, .img1-label-description,.img2-label-description{
+.big-label-description, .img1-label-description,.img2-label-description, .img3-label-description{
     font-size: 1.25em;
     margin-top: 0.25em;
 }
@@ -382,7 +384,7 @@ footer ul{
 .img4{
     order: 4;
 }
-.big-label, .img1-label, .img2-label{
+.big-label, .img1-label, .img2-label, .img3-label{
     background-color: var(--blue-border);
     opacity: 1;
     bottom: 30px;
@@ -392,7 +394,7 @@ footer ul{
     border-radius: 0;
     position: absolute;
     display: flex;
-    align-items: left;
+    align-items: center;
     justify-content: flex-start;
 }
 .big-label-title h3, .img1-label-title h3, .img2-label-title h3{
@@ -401,8 +403,18 @@ footer ul{
     font-weight: bold;
     text-align: center;
 }
+.img3-label-title h3{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 .big-label-description, .img1-label-description, .img2-label-description{
     font-size: 18px;
+    text-align: center;
+}
+.img3-label-description{
+    font-size: 16px;
     text-align: center;
 }
 }
