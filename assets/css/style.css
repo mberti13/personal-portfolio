@@ -188,7 +188,7 @@ hr.dotted{
     position: relative;
 }
 .img4{
-    background-image: url(../images/run-buddy-photo.jpg);
+    background-image: url(../images/Screenshot\ 2022-03-27\ 224334.jpg);
     background-size: 350px 250px;
     background-position: center;
     grid-column-start: 3;
@@ -206,7 +206,7 @@ hr.dotted{
 
 
 .big-image{
-    background-image: url(../images/Screenshot\ 2022-03-27\ 224334.jpg);
+    background-image: url(../images/Crescendo.jpg);
     background-size: cover;
     background-position: center;
     grid-column-start: 2;
